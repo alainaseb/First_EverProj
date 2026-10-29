@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #101827;
+      color: black;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .card {
+      max-width: 550px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 20px;
+      background: #202d42;
+    }
+
+    h1 {
+      color: #65e6c4;
+    }
+
+    button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background: #65e6c4;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hey, I'm a Future Noob Developer,lmao!</h1>
+    <p>I'm still learning to code and building my first project.</p>
+    <p>My goal: turn ideas into real things, somehow.</p>
+    <button onclick="sayHello()">Click me!</button>
+    <p id="message"></p>
+  </div>
+
+  <script>
+    function sayHello() {
+      document.getElementById("message").textContent =
+        "Let's build something awesome!";
+    }
+  </script>
+</body>
+</html>
